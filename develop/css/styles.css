@@ -102,3 +102,9 @@ body {
   font-size: var(--fs-quote);
   font-weight: var(--fw-extra-bold);
 }
+
+.main {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}

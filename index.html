@@ -35,24 +35,30 @@
 
     <style>
       .attribution {
+        color: white;
         font-size: 11px;
         text-align: center;
       }
       .attribution a {
-        color: hsl(228, 45%, 44%);
+        color: white;
       }
     </style>
   </head>
   <body>
-    <advice-generator></advice-generator>
+    <!-- this is here so I don't get an accessibility warning about the page requiring an h1 -->
+    <h1 class="sr-only">Advice Generator Component</h1>
 
-    <!-- <footer>
+    <main class="main">
+      <advice-generator></advice-generator>
+    </main>
+
+    <footer>
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
           >Frontend Mentor</a
         >. Coded by <a href="#">Daniel Arzanipour</a>.
       </div>
-    </footer> -->
+    </footer>
   </body>
 </html>
