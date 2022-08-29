@@ -1,0 +1,74 @@
+/**------------------- 
+**       CARD
+--------------------*/
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 2rem;
+  padding-bottom: 4rem;
+  align-items: center;
+
+  background-color: hsl(var(--clr-dark-grayish-blue));
+  border-radius: 0.625rem;
+  margin: 0 auto;
+  position: relative;
+  width: clamp(0ch, 100%, 27ch);
+  max-width: 480px;
+}
+
+/**------------------- 
+**   TEXT CONTENT
+--------------------*/
+.card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.card__title {
+  color: hsl(var(--clr-neon-green));
+  font-size: 0.8125rem;
+  letter-spacing: 0.3125rem;
+  text-transform: uppercase;
+}
+
+.card__quote {
+  color: hsl(193, 38%, 86%);
+}
+
+/**------------------- 
+**     DIVIDER
+--------------------*/
+.card__divider {
+}
+
+.card__divider img {
+}
+
+/**------------------- 
+**     DICE BTN
+--------------------*/
+.btn--dice {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  aspect-ratio: 1;
+  background-color: hsl(var(--clr-neon-green));
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+
+.btn--dice:hover {
+  box-shadow: 0 0 7px 4px hsl(var(--clr-neon-green));
+}
